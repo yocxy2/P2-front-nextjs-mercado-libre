@@ -21,6 +21,7 @@ module.exports = {
       'ml-blue': '#3483FA',
       'ml-mid-black': '#333333',
       'ml-black-light': '#4B4B4B',
+      'ml-white' : '#FFF'
     },
   },
   plugins: [],
