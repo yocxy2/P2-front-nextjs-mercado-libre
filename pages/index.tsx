@@ -47,27 +47,33 @@ const Home: NextPage = () => (
     </Head>
     <div className='text-3xl font-bold underline'>Proyecto 2</div>
 
-    <section className='debug w-[1024px] h-[400px] flex flex-col gap-[22px]'>
-        <div className='debug flex gap-[25px] pt-10 pl-2'>
-            <span className='font-sans text-2xl text-ml-gray debug'>Beneficios de Mercado Puntos</span>
-            <span className='font-sans text-sm text-ml-blue pt-[10px] debug'>Ver todos los beneficios</span>
-        </div>  
-        <div className='flex gap-4 pr-2 pl-2 debug'>
-            {cardBeneficiosInfo.cards.map((card, index) => (
-                    <CardBeneficions
-                    key={`${card.forwardName}_${index}`}
-                    backImage={card.backImage}
-                    backName={card.backName}
-                    forwardImage={card.forwardImage}
-                    forwardName={card.forwardName}
-                    text1={card.text1}
-                    text2={card.text2}
-                    text3={card.text3}
-                    />
-                ))}
-        </div> 
-
+    <section className='flex w-screen justify-center items-center'>
+      <div className='w-[320px] lg:w-[1024px] flex flex-col gap-[22px]'>
+        <div className='flex gap-[25px] pt-10 pl-2'>
+          <span className='font-sans text-2xl text-ml-gray'>
+            Beneficios de Mercado Puntos
+          </span>
+          <span className='font-sans text-sm text-ml-blue pt-[10px]'>
+            Ver todos los beneficios
+          </span>
+        </div>
+        <div className='flex gap-4 pr-2 pl-2 flex-col lg:flex-row'>
+          {cardBeneficiosInfo.cards.map((card, index) => (
+            <CardBeneficions
+              key={`${card.forwardName}_${index}`}
+              backImage={card.backImage}
+              backName={card.backName}
+              forwardImage={card.forwardImage}
+              forwardName={card.forwardName}
+              text1={card.text1}
+              text2={card.text2}
+              text3={card.text3}
+            />
+          ))}
+        </div>
+      </div>
     </section>
+
   </>
 );
 
