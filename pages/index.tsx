@@ -1,4 +1,5 @@
 import { Beneficios } from '@components/Beneficios';
+import { Descubre } from '@components/Descubre';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -17,7 +18,10 @@ const Home: NextPage = () => (
     </Head>
     <div className='text-3xl font-bold underline'>Proyecto 2</div>
     <Beneficios/>
+    <Descubre/>
     
+
+      
 
   </>
 );

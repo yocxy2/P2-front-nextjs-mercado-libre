@@ -34,15 +34,15 @@ const cardBeneficiosInfo = {
 
 const Beneficios = () => (
     <>
-        <section className='flex w-screen justify-center items-center'>
+        <section className='flex w-screen justify-center items-center debug'>
             <div className='w-[320px] lg:w-[1024px] flex flex-col gap-[22px]'>
                 <div className='flex gap-[25px] pt-10 pl-2'>
-                <span className='font-sans text-2xl text-ml-gray'>
-                    Beneficios de Mercado Puntos
-                </span>
-                <span className='font-sans text-sm text-ml-blue pt-[10px]'>
-                    Ver todos los beneficios
-                </span>
+                    <span className='font-sans text-2xl text-ml-gray'>
+                        Beneficios de Mercado Puntos
+                    </span>
+                    <span className='font-sans text-sm text-ml-blue pt-[10px]'>
+                        Ver todos los beneficios
+                    </span>
                 </div>
                 <div className='flex gap-4 pr-2 pl-2 flex-col lg:flex-row'>
                 {cardBeneficiosInfo.cards.map((card, index) => (
@@ -63,4 +63,4 @@ const Beneficios = () => (
     </>
   );
 
-export {Beneficios}
+export {Beneficios};
