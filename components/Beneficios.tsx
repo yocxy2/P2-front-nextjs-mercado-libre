@@ -34,7 +34,7 @@ const cardBeneficiosInfo = {
 
 const Beneficios = () => (
     <>
-        <section className='flex w-screen justify-center items-center debug'>
+        <section className='flex w-screen justify-center items-center'>
             <div className='w-[320px] lg:w-[1024px] flex flex-col gap-[22px]'>
                 <div className='flex gap-[25px] pt-10 pl-2'>
                     <span className='font-sans text-2xl text-ml-gray'>
@@ -45,9 +45,9 @@ const Beneficios = () => (
                     </span>
                 </div>
                 <div className='flex gap-4 pr-2 pl-2 flex-col lg:flex-row'>
-                {cardBeneficiosInfo.cards.map((card, index) => (
+                {cardBeneficiosInfo.cards.map((card) => (
                     <CardBeneficions
-                    key={`${card.forwardName}_${index}`}
+                    key={`${card.forwardName}`}
                     backImage={card.backImage}
                     backName={card.backName}
                     forwardImage={card.forwardImage}

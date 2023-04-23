@@ -22,23 +22,25 @@ const cardDescubreInfo = {
 }
 
 const Descubre = () => (
-    <section className='flex flex-col w-screen gap-5 items-center debug '>
-        <div className='flex flex-row w-[320px] lg:w-[1024px] pt-[37px] pl-2 debug'>
-          <span className='font-serif'>Descubre</span>
-        </div>
+    <section className='flex justify-center w-screen'>
+        <div className="flex flex-col gap-5 items-center ">
+            <div className='flex flex-row w-[320px] lg:w-[1024px] pt-[37px] pl-2'>
+            <span className='font-serif'>Descubre</span>
+            </div>
 
-        <div className='flex flex-col w-[320px] h-[250px] gap-[15px] lg:flex-row lg:w-[1024px] debug '>
-            {cardDescubreInfo.cards.map((card, index) => (
-                <CardDescubre
-                key={`${card.imageName}_${index}`}
-                text1={card.text1}
-                text2={card.text2}
-                text3={card.text3}
-                image={card.image}
-                imageName={card.imageName}
-                buttonName={card.buttonName}
-                />
-            ))}
+            <div className='flex flex-col w-[320px] gap-[15px] lg:flex-row lg:w-[1024px] '>
+                {cardDescubreInfo.cards.map((card) => (
+                    <CardDescubre
+                    key={`${card.imageName}`}
+                    text1={card.text1}
+                    text2={card.text2}
+                    text3={card.text3}
+                    image={card.image}
+                    imageName={card.imageName}
+                    buttonName={card.buttonName}
+                    />
+                ))}
+            </div>
         </div>
     </section>
   );
