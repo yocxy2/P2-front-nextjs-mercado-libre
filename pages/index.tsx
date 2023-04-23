@@ -1,5 +1,10 @@
+import { Beneficios } from '@components/Beneficios';
+import { Descubre } from '@components/Descubre';
+import { Supermercado } from '@components/Supermercado';
 import { NextPage } from 'next';
 import Head from 'next/head';
+
+
 
 const Home: NextPage = () => (
   <>
@@ -13,6 +18,14 @@ const Home: NextPage = () => (
       <link rel='icon' href='/favicon.svg' />
     </Head>
     <div className='text-3xl font-bold underline'>Proyecto 2</div>
+    <Beneficios/>
+    <Descubre/>
+    <Supermercado/>
+
+    
+
+      
+
   </>
 );
 
