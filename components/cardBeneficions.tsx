@@ -27,9 +27,7 @@ const CardBeneficions = ({backImage, backName, forwardName, forwardImage, text1,
             <span className='font-sans text-white text-xs'>{text3}</span>
           </div>
         </div>
-      </div>
-
-      
+      </div>  
     </>
   );
 
